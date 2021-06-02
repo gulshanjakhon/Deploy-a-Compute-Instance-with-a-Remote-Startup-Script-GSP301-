@@ -1,0 +1,31 @@
+LAB NAME : Deploy a Compute Instance with a Remote Startup Script(GSP301) 100% COMPLETE 💥💥
+	FOLLOW STEPS : 
+
+============================================================
+TASK 1 : Confirm that a Google Cloud Storage bucket exists that contains a file
+	GOTO 'CLOUD STORAGE' 
+		=> CREATE BUCKET
+		=> NAME IT "YOUR CHOICE"
+			=> CREATE
+	DOWNLOAD Sample Startup Script(https://google.qwiklabs.com/instructions/2673847/download)
+		=> UPLOAD IN YOUR BUCKET
+ click on upload file and copy file (i.e. gs://qwiklabs-gcp-01-0638d846b4b6/resources-install-web.sh)
+=========================================================
+TASK 2 : Confirm that a compute instance has been created that has a remote startup script called install-web.sh configured
+=====================================================
+	go to VM INSTANCE
+	=> CREATE VM
+	=> USE DEFAULT SETTING i.e. (name )
+	=> click on ALLOW HTTPS(choose both)
+	=> Under management section
+		=> key = startup-script-url
+		=> Value = [#REPLACE WITH YOUR : i.e. =>gs://qwiklabs-gcp-01-0638d846b4b6/resources-install-web.sh]
+		click create
+
+=========================================================
+TASK 3 : Confirm that a HTTP access firewall rule exists with tag that applies to that virtual machine
+=========================================================
+ check your progress :(100%)
+
+=====================THE END======================
+Thank you!!✌
